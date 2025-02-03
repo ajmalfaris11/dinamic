@@ -1,139 +1,211 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-*{
-  margin: 0;
-  padding: 0; 
-  box-sizing: border-box;
-  font-family: "Spartan", san-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", san-serif;
 }
 
-h1{
-  font-size: 50px;
-  line-height: 64px;
-  color: #222;
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
 }
 
-h2{
-  font-size: 46px;
-  line-height: 54px;
-  color: #222;
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
 }
 
-h4{
-  font-size: 20px;
-  color: #222;
+h4 {
+    font-size: 20px;
+    color: #222;
 }
 
-h6{
-  font-size: 12px;
-  font-weight: 700;
+h6 {
+    font-size: 12px;
+    font-weight: 700;
 }
 
-p{
-  font-size: 16px;
-  color: #465b52;
-  margin: 15px 0 20px 0
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0
 }
 
-.section-p1{
-  padding: 40px 80px;
-  
+.section-p1 {
+    padding: 40px 80px;
+
 }
 
 
-.section-m1{
-  padding: 40px 0;
+.section-m1 {
+    padding: 40px 0;
 }
 
-body{
- width: 100%;
- font-family: inherit; 
+body {
+    width: 100%;
+    font-family: inherit;
 }
 
 /* ==== Header ==== Header ==== Header */
 
-#header{
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 80px;
-  background-color: black;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06)
+#header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06)
 }
 
-#header img{
+#header img {
     width: 100px;
 }
 
-#navbar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.quantity{
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  position: absolute;
-  top: -5px;
-  left: 80%;
-  padding: 5px 6px;
-  font-size: 7px
-  
+.quantity {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 5px 6px;
+    font-size: 7px
 }
 
-#mobile{
-display: none;
-  align-items: center
+#mobile {
+    display: none;
+    align-items: center
 }
 
-#close{
-  display: none
+#close {
+    display: none
 }
 
-#navbar li{
-  list-style: none; 
-  padding: 0 20px;
-  position: relative;
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
 }
 
-#navbar li a{
-  text-decoration: none;
-  font-size: 16px;
-  color: white;
-  transition: 0.3s ease
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s ease
 }
 
 #navbar li a:hover,
-#navbar li a.active{
-  color: white;
+#navbar li a.active {
+    color: white;
 }
 
 #navbar li a:hover::after,
-#navbar li a.active::after{
-  content: " ";
-  width: 30%;
-  height: 2px;
-  background: 2px;
-  background-color: white;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
+#navbar li a.active::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
 
-#lg-bag i{
+#lg-bag i {
     font-size: 24px;
 }
+
+
+/* ==== Hero Section ==== Hero Section ==== Hero Section ====*/
+
+
+#hero {
+    background-image: url("images/hero.png");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    line-height: 1;
+    gap: 10px;
+
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+
+}
+
+#hero h1 {
+    color: black;
+    font-size: 1000%;
+    color: #fff;
+    line-height: 160px;
+    margin-top: 10%;
+
+}
+
+#hero p {
+    font-size: 200%;
+    color: #fff;
+}
+
+#hero button {
+    color: black;
+    background-color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 70px;
+
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+#hero button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+#hero button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
