@@ -213,8 +213,8 @@ body {
 
 
 #feature {
- background-color: black;
-border-block: 10px solid white;
+    background-color: black;
+    border-block: 10px solid white;
 }
 
 #feature .fe-box {
