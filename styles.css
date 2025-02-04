@@ -209,3 +209,49 @@ body {
     box-shadow: none;
 }
 
+/* ==== Feature Section ==== Feature Section ==== Feature Section ====*/
+
+
+#feature {
+ background-color: black;
+border-block: 10px solid white;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border-radius: 22px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box h6 {
+    display: in-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 20px;
+    color: white;
+    background-color: #fddde4;
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#feature .fe-box h6 {
+    background-color: black;
+}
