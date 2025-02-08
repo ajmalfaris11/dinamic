@@ -357,3 +357,28 @@ body {
     border-bottom: 10px solid black;
 
 }
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/1200x/fe/0d/d6/fe0dd684468dd0ae65d5f26d5181a13d.jpg);
+    min-width: 580px;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 30px
+}
+
+#sm-banner .banner-box2 {
+    background-image: url(https://i.pinimg.com/1200x/4a/65/8d/4a658d3778679de538a4c5471e61ba8c.jpg)
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
