@@ -382,3 +382,37 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/6d/e5/4d/6de54dda2797add52c2da1a063cbc4ab.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 16px
+}
+
+
+
+#banner3 .banner-img2 {
+    background-image: url(https://i.pinimg.com/736x/71/1d/e7/711de7919f016b23144f044fe1738400.jpg)
+}
+
+#banner3 .banner-img3 {
+    background-image: url(https://i.pinimg.com/736x/b5/0b/a3/b50ba330605a82e29a948aba34dfb52f.jpg)
+}
