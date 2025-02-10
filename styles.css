@@ -416,3 +416,63 @@ body {
 #banner3 .banner-img3 {
     background-image: url(https://i.pinimg.com/736x/b5/0b/a3/b50ba330605a82e29a948aba34dfb52f.jpg)
 }
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    color: #fff;
+    gap: 40px;
+}
+
+#newsletter .newstext h4 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#newsletter .newstext p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+#newsletter .newstext span {
+    color: #fff;
+    font-weight: 700;
+}
+
+#newsletter .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    border: solid 1px black;
+    border-radius: 12px;
+}
+
+#newsletter input {
+    padding: 14px 18px;
+    width: 280px;
+    border-radius: 12px 0 0 12px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+#newsletter button {
+    background: #111;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+#newsletter button:hover {
+    background: #222;
+    transform: translateY(-2px);
+}
