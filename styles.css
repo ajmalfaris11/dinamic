@@ -476,3 +476,82 @@ body {
     background: #222;
     transform: translateY(-2px);
 }
+
+.footer {
+    background: black;
+    color: #fff;
+    padding: 60px 80px;
+    border-top: 1px solid #222;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 50px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer-col p {
+    color: white;
+}
+
+.footer-col a {
+    display: block;
+    color: #bfbfbf;
+    font-size: 14px;
+    margin: 14px 0;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.logo {
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.brand-text {
+    color: #aaa;
+    font-size: 14px;
+    margin: 10px 0 20px;
+    max-width: 220px;
+}
+
+.socials i {
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+    color: #aaa;
+    transition: 0.2s;
+}
+
+.socials i:hover {
+    color: #fff;
+}
+
+.app-badges img {
+    width: 140px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 13px;
+}
