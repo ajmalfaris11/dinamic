@@ -217,65 +217,6 @@ body {
     box-shadow: none;
 }
 
-/* ==== Feature Section ==== */
-
-#feature {
-    background-color: black;
-    border-block: 10px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-    /* Added gap */
-}
-
-#feature .fe-box {
-    flex-grow: 1;
-    /* Allows boxes to grow */
-    min-width: 180px;
-    /* Set min width for responsiveness */
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1);
-    /* White shadow for contrast */
-    border-radius: 22px;
-    margin: 15px 0;
-    background-color: #1a1a1a;
-    /* Dark background */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#feature .fe-box:hover {
-    box-shadow: 10px 10px 54px rgba(255, 255, 255, 0.2);
-    transform: translateY(-5px);
-    /* Lift animation */
-}
-
-#feature .fe-box h6 {
-    display: in-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 20px;
-    color: white;
-    background-color: #fddde4;
-    /* Original background */
-    color: #000;
-    /* Text color */
-}
-
-#feature .fe-box img {
-    width: 100%;
-    max-width: 70px;
-    /* Constrain image size */
-    margin-bottom: 10px;
-}
-
-#feature .fe-box h6 {
-    background-color: white;
-    /* Changed to white for visibility */
-}
-
 /* ==== Product Section ==== */
 
 #product1 {
@@ -849,17 +790,6 @@ body {
         padding: 12px 20px;
     }
 
-    /* --- Feature --- */
-    #feature {
-        flex-direction: column;
-        padding: 20px 10px;
-        gap: 10px;
-    }
-
-    #feature .fe-box {
-        min-width: 100%;
-        margin: 5px 0;
-    }
 
     /* --- Products --- */
     #product1 .pro-container {
