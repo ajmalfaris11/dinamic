@@ -866,3 +866,116 @@ body {
         margin: 0 auto 15px;
     }
 }
+
+
+/* Remove or comment out the old #feature styles */
+/* #feature {
+    background-color: black;
+    border-block: 10px solid white;
+    ... (old styles)
+} 
+*/
+
+/* =======================================================
+    NEW SCROLLING FEATURE SECTION 
+   ======================================================= */
+
+/* Keyframes for the continuous scrolling animation */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Move exactly half the content width (since we duplicated it) */
+        transform: translateX(-50%);
+    }
+}
+
+#scrolling-feature {
+    /* Keeping the original black/white border styling */
+    background-color: black;
+    border-block: 10px solid white;
+    padding: 20px 0; /* Reduced vertical padding */
+    overflow: hidden; /* Crucial: Hides content outside the container */
+    white-space: nowrap; /* Prevents items from wrapping */
+    text-align: center;
+}
+
+#scrolling-feature h2 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#scrolling-feature p {
+    color: #a0a0a0;
+    margin-bottom: 25px;
+}
+
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.feature-track {
+    display: flex;
+    gap: 30px; /* Space between each feature box */
+    /* Total width is 200% of the visible container to hold duplicates */
+    width: fit-content; 
+    /* Start the animation */
+    animation: scroll-left 40s linear infinite;
+    padding: 10px 0;
+}
+
+.feature-track:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+#scrolling-feature .fe-box {
+    /* These styles maintain the look of the original fe-box */
+    min-width: 200px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1); 
+    border-radius: 16px;
+    background-color: #1a1a1a; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#scrolling-feature h2 {
+    font-size: 24px;
+}
+
+#scrolling-feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); 
+}
+
+#scrolling-feature .fe-box img {
+    width: 100%;
+    max-width: 70px;
+    margin-bottom: 10px;
+}
+
+#scrolling-feature .fe-box h6 {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#scrolling-feature .fe-box span.material-symbols-outlined {
+  font-size: 40px;
+  color: white;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* Speed up the scroll animation on smaller screens */
+    .feature-track {
+        animation-duration: 25s; /* Faster scroll */
+        gap: 20px;
+    }
+
+    #scrolling-feature .fe-box {
+        min-width: 180px; /* Slightly smaller boxes for mobile */
+    }
+}
